@@ -11,11 +11,8 @@ int main()
 {
     int c;
 
-    c = getchar();
-    while (c != EOF) {  /* EOF - is a macro constant from stdio.h
-                           it means End Of File */
+    while ((c = getchar()) != EOF) {
         putchar(c);
-        c = getchar();
     }
 
     return 0;
